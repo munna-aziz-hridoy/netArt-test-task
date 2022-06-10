@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Tai+Heritage+Pro:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Tai Heritage Pro", serif;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100vw;
+}
+
+section,
+.footer-container,
+.footer-top {
+  padding: 0 10px;
+  width: 95%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+header .nab-bar {
+  width: 100%;
+}
+header .nab-bar .logo {
+  width: fit-content;
+  margin: 0 auto;
+}
+header .nab-bar .logo img {
+  width: 90%;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+/* body section */
+
+/* banner */
+
+.banner-section {
+  display: flex;
+}
+
+.banner-section .banner-image {
+  width: 35%;
+}
+.banner-section .banner-image img {
+  width: 100%;
+}
+
+.banner-section .banner-description {
+  width: 65%;
+}
+
+.banner-description .banner-title {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.banner-description .banner-list {
+  margin-left: 3rem;
+}
+
+.banner-description .banner-list li {
+  font-weight: bold;
+  line-height: 15px;
+  margin-bottom: 6px;
+}
+
+.banner-description .banner-description-image {
+  width: 100%;
+}
+.banner-description .banner-description-image img {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.banner-description .banner-details {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.banner-details .hight-light {
+  font-weight: 600;
+}
+
+/* main section */
+.body-section {
+  margin-top: 50px;
+}
+.body-section .body-title {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 600;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.body-section .body-image {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.body-section .body-image img {
+  width: 96%;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.body-section .body-footer {
+  line-height: 18px;
+  text-align: center;
+  margin: 16px 0;
+}
+
+.red-line {
+  width: 97%;
+  height: 2px;
+  margin: 0 auto;
+  background: red;
+}
+
+/* footer */
+
+.footer-top {
+  margin: 30px auto;
+}
+
+.footer-top .footer-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer-top .footer-description {
+  font-weight: 600;
+}
+
+.footer-top .footer-title,
+.footer-top .footer-description {
+  text-align: center;
+}
+
+.footer-description-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3px;
+  line-height: 22px;
+}
+
+.devider {
+  display: inline-block;
+  height: 20px;
+  width: 2px;
+  background-color: red;
+  margin: 0 5px;
+}
+
+.footer-bottom {
+  height: 150px;
+  background: red;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-container .footer-social {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-icon:nth-child(1),
+.footer-icon:nth-child(2) {
+  color: red;
+  background: white;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  border-radius: 50%;
+}
+
+/* media query */
+
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1024px) {
+  .footer-container {
+    flex-wrap: wrap;
+  }
+  .footer-social {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner-section {
+    flex-direction: column;
+  }
+
+  .banner-section .banner-image {
+    margin: 0 auto;
+  }
+
+  .banner-section .banner-description {
+    width: 100%;
+  }
+  .banner-description .banner-title {
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+  }
+
+  .footer-social {
+    width: 100%;
+  }
+}
